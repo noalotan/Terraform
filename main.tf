@@ -10,14 +10,14 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-east-1"
+  region  = var.region
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0a0e5d9c7acc336f1"
-  instance_type = "t2.micro"
-  subnet_id     = "subnet-0ef884acbd166c8c4"
-  security_groups = ["sg-053dcc6ba867a0c29"]
+  ami           = var.ami
+  instance_type = var.instance_type
+  subnet_id     = var.subnet_id
+  security_groups = var.security_groups
 
   tags = {
     Name = var.instance_name
