@@ -44,7 +44,13 @@ vim variables.tf
 terraform init
 ```
 
-4. Apply the configuration:
+4. Generates an Execution Plan:
+
+```bash
+terraform plan
+```
+
+5. Apply the configuration:
 
 ```bash
 terraform apply
