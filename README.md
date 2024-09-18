@@ -27,24 +27,24 @@ You should also have an AWS account and necessary permissions to create resource
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/noalotan/Terraform.git
-   cd Terraform
-   ```
+```bash
+git clone https://github.com/noalotan/Terraform.git
+cd Terraform
+```
    
-Edit the variables.tf file to define your variables:
+2. Edit the variables.tf file to define your variables:
 
 ```bash
 vim variables.tf
 ```
 
-Initialize Terraform:
+3. Initialize Terraform:
 
 ```bash
 terraform init
 ```
 
-Apply the configuration:
+4. Apply the configuration:
 
 ```bash
 terraform apply
@@ -52,15 +52,21 @@ terraform apply
 
 ## Variables
 
-_The following variables are available for configuration:_
+The following variables are available for configuration:
 
-region: The AWS region to deploy resources in.
-ami: The AMI ID to use for the EC2 instance.
-instance_type: The type of EC2 instance to create.
-subnet_id: The ID of the subnet where the instance will be deployed.
-security_groups: The security groups to associate with the instance.
-key_name: The name of the SSH key pair to use for accessing the instance.
-instance_name: The name tag for the EC2 instance.
+_region: The AWS region to deploy resources in._
+
+_ami: The AMI ID to use for the EC2 instance._
+
+_instance_type: The type of EC2 instance to create._
+
+_subnet_id: The ID of the subnet where the instance will be deployed._
+
+_security_groups: The security groups to associate with the instance._
+
+_key_name: The name of the SSH key pair to use for accessing the instance._
+
+_instance_name: The name tag for the EC2 instance._
 
 ## Usage
 Once the resources are provisioned, you can SSH into your EC2 instance using the following command:
