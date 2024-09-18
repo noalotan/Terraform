@@ -54,19 +54,19 @@ terraform apply
 
 The following variables are available for configuration:
 
-_region: The AWS region to deploy resources in._
+_-region: The AWS region to deploy resources in._
 
-_ami: The AMI ID to use for the EC2 instance._
+_-ami: The AMI ID to use for the EC2 instance._
 
-_instance_type: The type of EC2 instance to create._
+_-instance_type: The type of EC2 instance to create._
 
-_subnet_id: The ID of the subnet where the instance will be deployed._
+_-subnet_id: The ID of the subnet where the instance will be deployed._
 
-_security_groups: The security groups to associate with the instance._
+_-security_groups: The security groups to associate with the instance._
 
-_key_name: The name of the SSH key pair to use for accessing the instance._
+_-key_name: The name of the SSH key pair to use for accessing the instance._
 
-_instance_name: The name tag for the EC2 instance._
+_-instance_name: The name tag for the EC2 instance._
 
 ## Usage
 Once the resources are provisioned, you can SSH into your EC2 instance using the following command:
